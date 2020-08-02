@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ProductCard from './ProductCard.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="content-wrapper">
+      <ProductCard
+        title="Ultrafine Merino T-Shirt"
+        price="$80.00"
+        productImageSrc="shirt-1.jpg"
+        starRating="4"
+      />
+
+      <ProductCard
+        title="Ultrafine Merino T-Shirt"
+        price="$30.00"
+        productImageSrc="shirt-2.jpg"
+        starRating="3"
+      />
+
+      <ProductCard
+        title="Ultrafine Merino T-Shirt"
+        price="$100.00"
+        productImageSrc="shirt-3.jpg"
+        starRating="1"
+      />
     </div>
   );
 }
